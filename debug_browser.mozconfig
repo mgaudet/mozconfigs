@@ -1,0 +1,14 @@
+
+ac_add_options --enable-js-shell
+
+ac_add_options --disable-optimize
+ac_add_options --enable-debug
+ac_add_options --enable-warnings-as-errors
+ac_add_options --enable-ccache=ccache
+ac_add_options --enable-tests
+
+# Dump opt builds into another dir.
+# mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-browser-@CONFIG_GUESS@
+
+# For browser builds, because I do them infrequently, enable autoclobber
+mk_add_options AUTOCLOBBER=1

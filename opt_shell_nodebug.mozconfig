@@ -1,0 +1,9 @@
+ac_add_options --enable-application=js
+
+ac_add_options --enable-optimize
+ac_add_options --disable-debug
+
+ac_add_options --enable-tests
+
+# Dump opt builds into another dir.
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-shell-nodebug-@CONFIG_GUESS@

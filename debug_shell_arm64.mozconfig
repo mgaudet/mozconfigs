@@ -1,5 +1,6 @@
 ac_add_options --enable-application=js
 
+ac_add_options --enable-simulator=arm64
 ac_add_options --disable-optimize
 ac_add_options --enable-debug
 # ac_add_options --enable-warnings-as-errors
@@ -9,4 +10,4 @@ ac_add_options --enable-build-backends=CompileDB,RecursiveMake
 ac_add_options --enable-clang-plugin
 
 # Dump opt builds into another dir.
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-shell-@CONFIG_GUESS@
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-shell-arm64-@CONFIG_GUESS@

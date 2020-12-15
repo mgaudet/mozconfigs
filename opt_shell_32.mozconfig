@@ -11,7 +11,6 @@ ac_add_options --enable-application=js
 ac_add_options --enable-optimize
 ac_add_options --disable-debug
 ac_add_options --enable-ccache=ccache
-ac_add_options --enable-tests
 ac_add_options --enable-jitspew
 
 # Dump opt builds into another dir.

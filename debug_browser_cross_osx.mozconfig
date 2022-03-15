@@ -1,0 +1,24 @@
+
+ac_add_options --target=x86_64-apple-darwin
+ac_add_options --enable-bootstrap
+ac_add_options --with-macos-sdk=/home/matthew/sdks/MacOSX10.12.sdk
+ac_add_options --disable-geckodriver
+
+ac_add_options --enable-js-shell
+
+ac_add_options --disable-optimize
+ac_add_options --enable-debug
+ac_add_options --enable-warnings-as-errors
+ac_add_options --enable-ccache=ccache
+ac_add_options --enable-tests
+ac_add_options --enable-clang-plugin
+ac_add_options --enable-dom-streams
+
+# ac_add_options --disable-unified-build
+
+
+# Dump opt builds into another dir.
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-browser-cross-osx-@CONFIG_GUESS@
+
+# For browser builds, because I do them infrequently, enable autoclobber
+mk_add_options AUTOCLOBBER=1

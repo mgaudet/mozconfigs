@@ -10,9 +10,8 @@ ac_add_options --enable-build-backends=CompileDB,RecursiveMake
 # ac_add_options --enable-record-tuple
 # ac_add_options --disable-dom-streams
 
-
 # Dump opt builds into another dir.
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-shell-@CONFIG_GUESS@
+mk_add_options MOZ_OBJDIR=/home/matthew/data/obj-debug-shell-@CONFIG_GUESS@
 
 # Shell builds don't take too long to clobber, so clobber freely.
 mk_add_options AUTOCLOBBER=1

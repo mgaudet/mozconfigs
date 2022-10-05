@@ -1,5 +1,5 @@
 
-# ac_add_options --enable-js-shell
+ac_add_options --enable-js-shell
 
 # Use the same Java binary that was specified in bootstrap. This way, if the default system
 # Java is different than what Firefox needs, users should just need to override it (with

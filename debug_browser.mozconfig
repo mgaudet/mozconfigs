@@ -11,6 +11,7 @@ ac_add_options --enable-debug
 # ac_add_options --disable-unified-build
 # ac_add_options --enable-fuzzing
 ac_add_options --enable-linker=mold
+ac_add_options --without-wasm-sandboxed-libraries
 
 # Dump opt builds into another dir.
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-browser-@CONFIG_GUESS@

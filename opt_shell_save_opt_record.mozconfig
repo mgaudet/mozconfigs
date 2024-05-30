@@ -2,7 +2,7 @@ ac_add_options --enable-application=js
 
 ac_add_options --enable-optimize
 ac_add_options --disable-debug
-
+ac_add_options --with-ccache=sccache
 
 export CFLAGS="$CFLAGS -fsave-optimization-record"
 export CXXFLAGS="$CXXFLAGS -fsave-optimization-record"

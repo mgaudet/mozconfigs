@@ -5,10 +5,11 @@ ac_add_options --enable-debug
 # ac_add_options --enable-warnings-as-errors
 ac_add_options --enable-tests
 # ac_add_options --enable-perf
+ac_add_options --with-ccache=sccache
 
 # Dump opt builds into another dir.
-REV=$(hg log -r 'last(ancestors(.) and public())' -T '{node|short}')
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-shell-@CONFIG_GUESS@-$REV
+# REV=$(hg log -r 'last(ancestors(.) and public())' -T '{node|short}')
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-shell-@CONFIG_GUESS@
 
 # Shell builds should autoclobber
 mk_add_options AUTOCLOBBER=1

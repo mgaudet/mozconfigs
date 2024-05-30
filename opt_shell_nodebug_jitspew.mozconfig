@@ -6,6 +6,8 @@ ac_add_options --enable-jitspew
 
 ac_add_options --enable-tests
 ac_add_options --enable-perf
+ac_add_options --with-ccache=sccache
+
 
 # ac_add_options --enable-clang-plugin
 

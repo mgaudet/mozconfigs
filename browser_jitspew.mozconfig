@@ -2,7 +2,7 @@
 ac_add_options --enable-js-shell
 
 ac_add_options --enable-warnings-as-errors
-ac_add_options --enable-ccache=ccache
+ac_add_options --enable-ccache=sccache
 ac_add_options --enable-tests
 ac_add_options --enable-jitspew
 

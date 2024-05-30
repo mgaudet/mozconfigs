@@ -23,7 +23,7 @@ ac_add_options --disable-optimize
 ac_add_options --enable-debug
 ac_add_options --with-android-ndk="/home/matthew/.mozbuild/android-ndk-r21d/"
 ac_add_options --enable-warnings-as-errors
-ac_add_options --enable-ccache=ccache
+ac_add_options --enable-ccache=sccache
 ac_add_options --enable-tests
 ac_add_options --enable-clang-plugin
 

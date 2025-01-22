@@ -1,0 +1,16 @@
+# Apparently required by jstestbrowser
+ac_add_options --enable-js-shell
+
+ac_add_options --enable-optimize
+ac_add_options --disable-debug
+ac_add_options --enable-warnings-as-errors
+ac_add_options --enable-jitspew
+ac_add_options --as-milestone=release
+ac_add_options --without-wasm-sandboxed-libraries
+ac_add_options --with-ccache=sccache
+
+# Dump opt builds into another dir.
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-browser-as-release-@CONFIG_GUESS@
+
+# For browser builds, because I do them infrequently, enable autoclobber
+mk_add_options AUTOCLOBBER=1

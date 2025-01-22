@@ -1,0 +1,13 @@
+
+ac_add_options --enable-optimize
+ac_add_options --disable-debug
+ac_add_options --enable-warnings-as-errors
+# ac_add_options --enable-record-tuple
+# ac_add_options --enable-jitspew
+ac_add_options --disable-bootstrap
+
+# Dump opt builds into another dir.
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-opt-browser-nodebug-$(hg id --id)
+
+# For browser builds, because I do them infrequently, enable autoclobber
+mk_add_options AUTOCLOBBER=1

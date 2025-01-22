@@ -5,15 +5,14 @@ ac_add_options --enable-debug
 ac_add_options --enable-warnings-as-errors
 # ac_add_options --enable-ccache=ccache
 ac_add_options --enable-tests
+ac_add_options --enable-build-backends=CompileDB,RecursiveMake
 # ac_add_options --enable-clang-plugin
 # ac_add_options --enable-record-tuple
 # ac_add_options --disable-dom-streams
-# ac_add_options --enable-decorators
-# ac_add_options --with-temporal-api
-ac_add_options  --enable-bootstrap
+ac_add_options --enable-decorators
 
 # Dump opt builds into another dir.
-mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-shell-@CONFIG_GUESS@
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-debug-shell-decorators-@CONFIG_GUESS@
 
 # Shell builds don't take too long to clobber, so clobber freely.
 mk_add_options AUTOCLOBBER=1
